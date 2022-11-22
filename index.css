@@ -1,0 +1,136 @@
+html,
+body {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #545454;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content .message {
+  position: absolute;
+  background: #ffffffee;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.content .message.error {
+  color: #dd4444;
+}
+
+.content .message p {
+  position: relative;
+  top: 0;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 38px;
+}
+
+.content a {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.content a img {
+  width: 250px;
+}
+
+.content .map {
+  position: relative;
+  margin-top: 100px;
+  display: inline-block;
+}
+
+.content .map .info {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  background: #ffffffee;
+  transform: translateX(-50%);
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px #999;
+  padding: 10px;
+  display: none;
+}
+
+.content h1 {
+  font-size: 28px;
+  line-height: 34px;
+  margin: 50px 0 0 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.content .stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 50px auto 0 auto;
+}
+
+.content .stats .stat {
+  width: 46%;
+  margin: 1%;
+  padding: 10px;
+  background: #fafafa;
+  box-sizing: border-box;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.content .stats .stat .value {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.content .stats .stat .label {
+  font-size: 16px;
+  font-weight: 200;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+
+.content footer {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.content footer a {
+  text-decoration: none;
+  color: #5DA551;
+}
+
+@media (max-width: 900px) {
+  .content .stats {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content .stats {
+    width: 100%;
+  }
+
+  .content .stats .stat {
+    min-width: auto;
+    width: 98%;
+  }
+
+  .content .map .info {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+}

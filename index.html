@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>VK 2022 Aliĝintmapo</title>
+  <link rel="stylesheet" href="index.css" />
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript" src="/lib.js"></script>
+  <script type="text/javascript" src="/countries.js"></script>
+  <script type="text/javascript" src="/api.js"></script>
+  <script type="text/javascript" src="/map.js"></script>
+  <script type="text/javascript" src="/info.js"></script>
+  <script type="text/javascript" src="/app.js"></script>
+
+  <div class="content">
+    <div class="message">
+      <p></p>
+    </div>
+
+    <a href="https://vk.esperanto.net/2022">
+      <img src="https://vk.esperanto.net/2022/img/vk_logo.png" alt="Emblemo de VK 2022" />
+    </a>
+
+    <h1>
+      Jam aliĝis multaj homoj al la Virtuala Kongreso 2022. <br />
+      Rigardu kiom internacia kaj diversa estas la partoprenontaro.
+    </h1>
+
+    <div class="stats">
+      <div class="stat">
+        <div id="stat-homoj" class="value">--</div>
+        <div class="label">Mojosaj Homoj</div>
+      </div>
+
+      <div class="stat">
+        <div id="stat-kasxitaj" class="value">--</div>
+        <div class="label">Kaŝituloj</div>
+      </div>
+
+      <div class="stat">
+        <div id="stat-landoj" class="value">--</div>
+        <div class="label">Diversaj Landoj</div>
+      </div>
+
+      <div class="stat">
+        <div id="stat-plej" class="value">--</div>
+        <div class="label">Plej granda aliĝintaro (<span id="stat-plej-value"></span>)</div>
+      </div>
+    </div>
+
+    <div class="map">
+      <svg></svg>
+
+      <div class="info">
+
+
+        Some text goes here...
+
+      </div>
+    </div>
+
+    <footer>
+      Farita de <a href="https://martinrue.com">Martin</a>
+    </footer>
+  </div>
+</body>
+
+</html>
